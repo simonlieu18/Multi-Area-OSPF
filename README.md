@@ -4,7 +4,7 @@
 
 </p>
 
-<h1>Router on a Stick with inter-VLAN communication</h1>
+<h1>Multi-area OSPF Lab</h1>
 Multi-area OSPF lab configured in Cisco Packet Tracer featuring Area 0 backbone, ABR inter-area routing, and ASBR external route redistribution to a simulated ISP."<br />
 
 
