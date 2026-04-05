@@ -1,5 +1,6 @@
 <p align="center">
-<img width="55%" height="380" alt="image" src="https://github.com/user-attachments/assets/a7fb6da2-aa7b-4779-8300-787d45474257" />
+<img width="55%" alt="image" src="https://github.com/user-attachments/assets/2c483fc3-6203-4816-885f-a98225324a50" />
+
 
 
 </p>
@@ -17,7 +18,7 @@ Multi-area OSPF lab configured in Cisco Packet Tracer featuring Area 0 backbone,
 
 <h2>Operating Systems Used </h2>
 
-- Cisco IOS (Router & Switch)
+- Cisco IOS (Routers)
 
 <h2>High-Level Steps</h2>
 
@@ -55,9 +56,16 @@ R2 and R3 serve as ABRs, connecting their respective areas to the Area 0 backbon
 </p>
 <br />
 
-<img width="60%" height="476" alt="Screenshot 2026-03-06 at 2 59 38 PM" src="https://github.com/user-attachments/assets/f886cd86-f5c3-4a82-ad07-e854612558bc" />
+<img width="45%" alt="image" src="https://github.com/user-attachments/assets/1e615af8-2bb9-47cd-aa34-c6c1bb346fdf" />
+<img width="45%"  alt="image" src="https://github.com/user-attachments/assets/c6471fd1-141b-4c9d-907c-eb72991b5f12" />
 
-<p>
-Routers 2 and 3 are set up a bit differently because they are ARB routers in both the backbone area and another area.
+<p>R6 acts as the ASBR, sitting at the edge of the OSPF network and connecting to the simulated ISP router. A static default route is configured on R6 pointing to the ISP, and the 'default-information originate' command is used to advertise that route into OSPF. This allows all internal routers to automatically learn the gateway of last resort without needing individual static routes configured on each one.
+</p>
+<br />
+
+<img width="40%" height="394" alt="image" src="https://github.com/user-attachments/assets/027ac817-5d22-44ef-957a-6d6deec42a49" />
+
+<p> 
+Finally, use the 'show ip route' command to verify that all OSPF routes are learned across all areas and that the ASBR's default route is being shared with all internal routers.
 </p>
 <br />
