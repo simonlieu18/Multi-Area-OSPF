@@ -5,7 +5,7 @@
 
 </p>
 
-<h1>Multi-Area Routing OSPF Lab Lab</h1>
+<h1>Multi-Area Routing OSPF Lab</h1>
 Multi-area OSPF lab configured in Cisco Packet Tracer featuring Area 0 backbone, ABR inter-area routing, and ASBR external route redistribution to a simulated ISP.<br />
 
 
